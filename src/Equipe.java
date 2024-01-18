@@ -1,8 +1,11 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Equipe {
-    public static void main(String[] args) {
     private EquipeEnum nome;
-    private pilotos;
-    private tecnicos;
-    private carros;
-    }
+    private List<Piloto> pilotos;
+    private List<Tecnico> tecnicos;
+    private List<Carro> carros;
+
 }
