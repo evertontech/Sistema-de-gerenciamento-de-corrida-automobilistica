@@ -2,9 +2,9 @@ import java.util.List;
 
 public class Equipe {
     private EquipeEnum nome;
-    private List<Piloto> pilotos;
-    private List<Tecnico> tecnicos;
-    private List<Carro> carros;
+    private List<Piloto> listaDePilotos;
+    private List<Tecnico> listaDeTecnicos;
+    private List<Carro> listaDeCarros;
 
     public Equipe(EquipeEnum nome) {
         this.setNome(nome);
@@ -18,34 +18,22 @@ public class Equipe {
         return this.nome;
     }
 
-    public void setPilotos(List<Piloto> pilotos) {
-        this.pilotos = pilotos;
+    public List<Piloto> getListaDePilotos() {
+        return this.listaDePilotos;
     }
 
-    public List<Piloto> getPilotos() {
-        return this.pilotos;
+    public List<Tecnico> getListaDeTecnicos() {
+        return this.listaDeTecnicos;
     }
 
-    public void setTecnicos(List<Tecnico> tecnicos) {
-        this.tecnicos = tecnicos;
-    }
-
-    public List<Tecnico> getTecnicos() {
-        return this.tecnicos;
-    }
-
-    public void setCarros(List<Carro> carros) {
-        this.carros = carros;
-    }
-
-    public List<Carro> getCarros() {
-        return this.carros;
+    public List<Carro> getListaDeCarros() {
+        return this.listaDeCarros;
     }
 
     public void adicionarPiloto(Piloto pilotoParaAdicionar) {
         boolean numeroJaExisteNaEquipe = false;
 
-        for (Piloto p : pilotos) {
+        for (Piloto p : listaDePilotos) {
             if (pilotoParaAdicionar.getNumero().equals(p.getNumero())) {
                 numeroJaExisteNaEquipe = true;
                 break;
@@ -55,9 +43,11 @@ public class Equipe {
         if (numeroJaExisteNaEquipe) {
             System.out.println("O número do piloto já existe na equipe.");
         } else {
-            pilotos.add(pilotoParaAdicionar);
+            listaDePilotos.add(pilotoParaAdicionar);
         }
     }
 
-
+    public void adicionarTecnico(Tecnico tecnico) {
+        listaDeTecnicos.add(tecnico);
+    }
 }

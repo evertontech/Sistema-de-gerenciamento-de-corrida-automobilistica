@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Corrida {
     private LocalDate dataRealizacao;
-    private List<Equipe> equipesParticipantes;
+    private List<Equipe> listaDeEquipesParticipantes;
 
     public void setDataRealizacao(LocalDate dataRealizacao) {
         this.dataRealizacao = dataRealizacao;
@@ -13,12 +13,8 @@ public class Corrida {
         return dataRealizacao;
     }
 
-    public void setEquipesParticipantes(List<Equipe> equipesParticipantes) {
-        this.equipesParticipantes = equipesParticipantes;
-    }
-
-    public List<Equipe> getEquipesParticipantes() {
-        return this.equipesParticipantes;
+    public List<Equipe> getListaDeEquipesParticipantes() {
+        return this.listaDeEquipesParticipantes;
     }
 
     public void adicionarEquipe(Equipe equipe) {
