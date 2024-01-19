@@ -8,7 +8,11 @@ public class Carro {
     }
 
     public void setModelo(String modelo) {
-        this.modelo = modelo;
+        if (modelo != null) {
+            this.modelo = modelo;
+        } else {
+            System.out.println("O modelo do carro não pode ser nulo.");
+        }
     }
 
     public String getModelo() {
@@ -16,7 +20,11 @@ public class Carro {
     }
 
     public void setFabricante(String fabricante) {
-        this.fabricante = fabricante;
+        if (fabricante != null) {
+            this.fabricante = fabricante;
+        } else {
+            System.out.println("O fabricante não pode ser nulo.");
+        }
     }
 
     public String getFabricante() {
