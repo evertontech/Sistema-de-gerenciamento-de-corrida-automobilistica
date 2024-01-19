@@ -29,7 +29,11 @@ public class Tecnico extends Pessoa {
     }
 
     public void aumentarSalario(Integer bonificacaoPercentual) {
-
+        if (bonificacaoPercentual >= 1 && bonificacaoPercentual <= 30) {
+            Double aumentoSalarial = ((bonificacaoPercentual / 100.00) * getSalario()) + getSalario();
+        } else {
+            System.out.println("A Bonificação precisa ser entre 1% a 30%.");
+        }
     }
 }
 
