@@ -30,7 +30,8 @@ public class Piloto extends Pessoa {
     }
 
     public void atualizarPontuacao(Double valor) {
-
+        Double novaPontuacao = getPontuacao() + valor;
+        setPontuacao(novaPontuacao);
     }
 }
 
