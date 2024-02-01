@@ -26,5 +26,11 @@ public class Pessoa {
     public Integer getIdade() {
         return this.idade;
     }
+
+    public String toString() {
+        return "";
+    }
 }
+
+
 
