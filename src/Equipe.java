@@ -47,7 +47,15 @@ public class Equipe {
         }
     }
 
-    public void adicionarTecnico(Tecnico tecnico) {
-        listaDeTecnicos.add(tecnico);
+    public void adicionarTecnico(Tecnico tecnicoParaAdicionar) {
+        listaDeTecnicos.add(tecnicoParaAdicionar);
+    }
+
+    public void adicionarCarro(Carro carroParaAdicionar) {
+        listaDeCarros.add(carroParaAdicionar);
+    }
+
+    public String toString() {
+        return "";
     }
 }
