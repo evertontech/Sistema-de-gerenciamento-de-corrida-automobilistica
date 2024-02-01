@@ -34,6 +34,13 @@ public class Tecnico extends Pessoa {
         } else {
             System.out.println("A Bonificação precisa ser entre 1% a 30%.");
         }
+
+    }
+
+    public String toString() {
+        return "";
+
     }
 }
+
 
