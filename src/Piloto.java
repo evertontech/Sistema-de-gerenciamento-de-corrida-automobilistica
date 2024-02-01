@@ -18,11 +18,7 @@ public class Piloto extends Pessoa {
     }
 
     private void setPontuacao(Double pontuacao) {
-        if (pontuacao >= 0) {
-            this.pontuacao = pontuacao;
-        } else {
-            System.out.println("A pontuação dos pilotos não pode ser negativa.");
-        }
+        this.pontuacao = Math.max(pontuacao, 0.0);
     }
 
     public Double getPontuacao() {
@@ -30,7 +26,7 @@ public class Piloto extends Pessoa {
     }
 
     public void atualizarPontuacao(Double valor) {
-        Double novaPontuacao = getPontuacao() + valor;
+        Double novaPontuacao = getPontuacao() + valor; 
         setPontuacao(novaPontuacao);
     }
 
