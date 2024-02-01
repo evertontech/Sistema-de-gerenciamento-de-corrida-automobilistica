@@ -17,16 +17,16 @@ public class Corrida {
         return this.listaDeEquipesParticipantes;
     }
 
-    public void adicionarEquipe(Equipe equipe) {
-
-    }
-
-    public void exibirInformacoes() {
+    public void adicionarEquipe(Equipe equipeParaAdicionar) {
 
     }
 
     public Double calcularPontuacaoTotal() {
         return 0.0;
+    }
+
+    public void exibirInformacoes() {
+
     }
 }
 
