@@ -1,3 +1,5 @@
+import java.util.Locale;
+
 public class Carro {
     private String modelo;
     private String fabricante;
@@ -8,8 +10,8 @@ public class Carro {
     }
 
     public void setModelo(String modelo) {
-        if (modelo != null) {
-            this.modelo = modelo;
+        if (modelo != null && !fabricante.isBlank()) {
+            this.modelo = modelo.toUpperCase();
         } else {
             System.out.println("O modelo do carro não pode ser nulo.");
         }
@@ -20,7 +22,7 @@ public class Carro {
     }
 
     public void setFabricante(String fabricante) {
-        if (fabricante != null) {
+        if (fabricante != null && !fabricante.isBlank()) {
             this.fabricante = fabricante;
         } else {
             System.out.println("O fabricante não pode ser nulo.");
@@ -29,6 +31,10 @@ public class Carro {
 
     public String getFabricante() {
         return fabricante;
+    }
+
+    public String toString() {
+        return "";
     }
 
 }
