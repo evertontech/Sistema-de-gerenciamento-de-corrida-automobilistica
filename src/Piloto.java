@@ -17,7 +17,7 @@ public class Piloto extends Pessoa {
         return numero;
     }
 
-    public void setPontuacao(Double pontuacao) {
+    private void setPontuacao(Double pontuacao) {
         if (pontuacao >= 0) {
             this.pontuacao = pontuacao;
         } else {
@@ -32,6 +32,10 @@ public class Piloto extends Pessoa {
     public void atualizarPontuacao(Double valor) {
         Double novaPontuacao = getPontuacao() + valor;
         setPontuacao(novaPontuacao);
+    }
+
+    public String toString() {
+        return "";
     }
 }
 
