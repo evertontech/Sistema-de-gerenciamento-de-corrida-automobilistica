@@ -55,6 +55,16 @@ public class Equipe {
         listaDeCarros.add(carroParaAdicionar);
     }
 
+    public double calcularPontuacaoTotal() {
+        double somaPontuacaoDaEquipe = 0.00;
+
+        for (Piloto piloto : listaDePilotos) {
+            somaPontuacaoDaEquipe += piloto.getPontuacao();
+        }
+
+        return somaPontuacaoDaEquipe;
+    }
+
     public String toString() {
         return "";
     }
