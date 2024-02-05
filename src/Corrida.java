@@ -22,7 +22,13 @@ public class Corrida {
     }
 
     public Double calcularPontuacaoTotal() {
-        return 0.0;
+        double pontuacaoTotal = 0.00;
+
+        for (Equipe equipe : listaDeEquipesParticipantes) {
+            pontuacaoTotal += equipe.calcularPontuacaoTotal();
+        }
+
+        return pontuacaoTotal;
     }
 
     public void exibirInformacoes() {
