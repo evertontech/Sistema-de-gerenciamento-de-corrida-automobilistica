@@ -18,7 +18,7 @@ public class Corrida {
     }
 
     public void adicionarEquipe(Equipe equipeParaAdicionar) {
-
+          this.listaDeEquipesParticipantes.add(equipeParaAdicionar);
     }
 
     public Double calcularPontuacaoTotal() {
