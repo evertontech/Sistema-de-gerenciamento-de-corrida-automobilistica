@@ -34,7 +34,7 @@ public class Carro {
     }
 
     public String toString() {
-        return "";
+        return this.fabricante + " " + this.modelo;
     }
 
 }

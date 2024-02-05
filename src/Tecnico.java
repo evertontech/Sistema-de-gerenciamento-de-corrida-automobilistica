@@ -39,7 +39,7 @@ public class Tecnico extends Pessoa {
     }
 
     public String toString() {
-        return "";
+        return this.salario + " " + this.codigo;
 
     }
 }

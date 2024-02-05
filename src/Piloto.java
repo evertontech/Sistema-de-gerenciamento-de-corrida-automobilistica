@@ -31,7 +31,7 @@ public class Piloto extends Pessoa {
     }
 
     public String toString() {
-        return "";
+        return this.pontuacao + " " + this.numero;
     }
 }
 

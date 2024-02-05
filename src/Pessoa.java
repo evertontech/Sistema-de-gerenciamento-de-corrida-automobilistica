@@ -28,7 +28,7 @@ public class Pessoa {
     }
 
     public String toString() {
-        return "";
+        return this.nome + " " + this.idade;
     }
 }
 

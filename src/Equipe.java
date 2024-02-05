@@ -66,6 +66,6 @@ public class Equipe {
     }
 
     public String toString() {
-        return "";
+        return this.nome + " " + this.listaDePilotos + " " + this.listaDeCarros + " " + this.listaDeTecnicos;
     }
 }
