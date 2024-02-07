@@ -8,7 +8,7 @@ public class Carro {
     }
 
     public void setModelo(String modelo) {
-        if (modelo != null && !fabricante.isBlank()) {
+        if (modelo != null && !modelo.isBlank()) {
             this.modelo = modelo.toUpperCase();
         } else {
             System.out.println("O modelo do carro não pode ser nulo.");
