@@ -1,5 +1,3 @@
-import java.util.Locale;
-
 public class Carro {
     private String modelo;
     private String fabricante;
@@ -34,7 +32,7 @@ public class Carro {
     }
 
     public String toString() {
-        return this.fabricante + " " + this.modelo;
+        return "Modelo: " + this.getModelo() + ", Fabricante: " + this.getFabricante();
     }
 
 }
