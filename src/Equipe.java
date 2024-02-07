@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Equipe {
@@ -65,7 +66,22 @@ public class Equipe {
         return somaPontuacaoDaEquipe;
     }
 
-    public String toString() {
-        return this.nome + " " + this.listaDePilotos + " " + this.listaDeCarros + " " + this.listaDeTecnicos;
+    public void exibirInformacoes() {
+        System.out.println("Nome: " + this.getNome().toString());
+
+        System.out.println("Lista de Pilotos:");
+        for (Piloto piloto : this.getListaDePilotos()) {
+            System.out.println(piloto);
+        }
+
+        System.out.println("Lista de Tecnicos:");
+        for (Tecnico tecnico : this.getListaDeTecnicos()) {
+            System.out.println(tecnico);
+        }
+
+        System.out.println("Lista de Carros:");
+        for (Carro carro : this.getListaDeCarros()) {
+            System.out.println(carro);
+        }
     }
 }
