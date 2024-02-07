@@ -1,9 +1,15 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Corrida {
     private LocalDate dataRealizacao;
     private List<Equipe> listaDeEquipesParticipantes;
+
+    public Corrida(LocalDate dataRealizacao) {
+        this.setDataRealizacao(dataRealizacao);
+        this.listaDeEquipesParticipantes = new ArrayList<>();
+    }
 
     public void setDataRealizacao(LocalDate dataRealizacao) {
         this.dataRealizacao = dataRealizacao;
@@ -18,7 +24,7 @@ public class Corrida {
     }
 
     public void adicionarEquipe(Equipe equipeParaAdicionar) {
-          this.listaDeEquipesParticipantes.add(equipeParaAdicionar);
+        this.listaDeEquipesParticipantes.add(equipeParaAdicionar);
     }
 
     public Double calcularPontuacaoTotal() {
