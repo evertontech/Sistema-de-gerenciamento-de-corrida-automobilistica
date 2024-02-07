@@ -26,12 +26,12 @@ public class Piloto extends Pessoa {
     }
 
     public void atualizarPontuacao(Double valor) {
-        Double novaPontuacao = getPontuacao() + valor; 
+        Double novaPontuacao = getPontuacao() + valor;
         setPontuacao(novaPontuacao);
     }
 
     public String toString() {
-        return this.pontuacao + " " + this.numero;
+        return super.toString() + ", Pontuação: " + this.getPontuacao() + ", Número: " + this.getNumero();
     }
 }
 
