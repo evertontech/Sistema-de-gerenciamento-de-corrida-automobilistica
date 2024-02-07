@@ -9,6 +9,9 @@ public class Equipe {
 
     public Equipe(EquipeEnum nome) {
         this.setNome(nome);
+        this.listaDePilotos = new ArrayList<>();
+        this.listaDeTecnicos = new ArrayList<>();
+        this.listaDeCarros = new ArrayList<>();
     }
 
     public void setNome(EquipeEnum nome) {
