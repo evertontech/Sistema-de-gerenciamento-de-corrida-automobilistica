@@ -38,7 +38,13 @@ public class Corrida {
     }
 
     public void exibirInformacoes() {
+        System.out.println("Data de Realização: " + getDataRealizacao());
 
+        System.out.println("Lista de Equipes Participantes:");
+        for (Equipe equipe : this.getListaDeEquipesParticipantes()) {
+            equipe.exibirInformacoes();
+            System.out.println("**************************************");
+        }
     }
 }
 
