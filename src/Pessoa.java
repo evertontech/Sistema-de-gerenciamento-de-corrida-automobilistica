@@ -28,7 +28,7 @@ public class Pessoa {
     }
 
     public String toString() {
-        return this.nome + " " + this.idade;
+        return "Nome: " + this.getNome() + ", Idade: " + this.getIdade();
     }
 }
 
